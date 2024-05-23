@@ -1,0 +1,86 @@
+@import url(https://db.onlinewebfonts.com/c/242126d4e361f4c0b59cd8db6f0e3baf?family=CCMaladroit+W00+Bold);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "CCMaladroit W00 Bold", sans-serif;
+    background-color: #2866da;
+}
+@keyframes popUp {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* General class for the pop-up animation */
+  .pop-up {
+    animation-name: popUp;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Specific timing classes */
+  .pop-up-1 {
+    animation-duration: 0.5s;
+  }
+  
+  .pop-up-2 {
+    animation-duration: 0.6s;
+  }
+  
+  .pop-up-3 {
+    animation-duration: 0.7s;
+  }
+  
+  /* Initial state for the divs */
+  .hidden {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    overflow: hidden;
+    margin-bottom: 10px;
+    
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: move;
+}
+
+.resizable {
+    resize: both;
+    overflow: auto;
+}
+#addButton{
+    font-size: 35px;
+    padding: 1.4vw;
+    border-radius: 20%;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    color: #ffb400;
+    background-color: red;
+}
+#addButton:hover{
+    transform: scale(1.1);
+}

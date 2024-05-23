@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAT</title>
+    <link rel="shortcut icon" href="9-hat.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="display: flex; justify-content: center; font-size: 6vw;">
+        <div id="initialPopUp1" class="hidden pop-up pop-up-1">PUT</div>
+        <div id="initialPopUp2" class="hidden pop-up pop-up-2">&nbspON</div>
+        <div id="initialPopUp3" class="hidden pop-up pop-up-3">&nbspA HELMET</div>
+    </div>
+    <div class="container" >
+        <div class="box">
+            <img style="width: 60%; z-index: 10; background: none;" src="9-hat.png" class="draggable resizable" id="hat" alt="Hat">
+        </div>
+        <input style="display: none;" type="file" id="fileInput" accept="image/*">
+        <button id="addButton">Add Image</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
